@@ -1,0 +1,26 @@
+<div>
+	<h1>This is the movie page</h1>
+	
+	<ul>
+		
+		<% for(var i =0;  i < movies.length; i ++) {%>
+		<li>
+			<span style="font-weight: bold">Title:</span> <%= movies[i].DVD_Title %>
+		</li>
+		<li>
+			<span style="font-weight: bold">Studio:</span> <%= movies[i].Studio %>
+		</li>
+		<li>
+			<span style="font-weight: bold">Genre:</span> <%= movies[i].Genre %>
+		</li>
+		<li>
+			<span style="font-weight: bold">Year:</span> <%= movies[i].Year %>
+		</li>
+		
+		<br>
+		<% } %>
+		<button type="button" id="prev">Prev </button>
+		<button type="button" id="next">Next</button>
+
+	</ul>
+</div>
